@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Adrian Klimaszewski">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COM1008 Project - Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <!--Logo & page title-->
+            <img id="logo" src="../Media/COM1008Logo.png" alt="Project logo">
+            <h1>COM1008 PROJECT</h1>
+
+            <!--Navigation-->
+            <ul class="navigation-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="degree.html">DEGREE</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <li><a href="canvas.html">CANVAS</a></li>
+                <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <!--Menu Icon-->
+            <div class="menu_icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!--Contant Information-->
+        <div class="section">
+            <h2>Contact</h2>
+            <p class="line">
+                If you would like to contact us please use the form presented on this site or address below. <br> <br>
+                Address:<br> Department of Computer Science <br> The University of Sheffield <br> Regent Court <br> 211
+                Portobello <br> Sheffield <br> S1 4DP <br> UK
+            </p>
+        </div>
+
+        <!--Contact Form-->
+        <div id="contact_form" class="section">
+            <h2>Contact Form</h2>
+            <form name="contactform" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" method="POST">
+                <input type="hidden" name="recipients" value="aklimaszewski1@sheffield.ac.uk">
+                <input type="hidden" name="subject" value="COM1008 Form Submission" />
+                <p>
+                    <label for="from">Your name:</label><br>
+                    <input type="text" name="from" id="from" placeholder="Your name" maxlength="40" size="20">
+                </p>
+
+                <p>
+                    <label for="email">Your e-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" maxlength="40" size="30"
+                        required>
+                </p>
+                <p>
+                    <label for="content">Your message:</label> <br>
+                    <textarea name="content" id="content" cols="30" rows="10"
+                        placeholder="Your message goes here"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Adrian Klimaszewski, 2020</p>
+    </footer>
+
+    <!--Scripts-->
+    <script src="../JavaScript/menu.js"></script>
+</body>
+
+</html>

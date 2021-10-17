@@ -1,0 +1,220 @@
+/* Written by Adrian Klimaszewski */
+
+
+/*Setting up the basic color scheme, sizes & nav bar*/
+h1 {font-size: 2em;
+    padding-left:20px;
+}
+h2 {
+    color:rgb(0, 119, 204);
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.line {
+    padding-bottom: 20px;
+    border-style: none none solid;
+    border-color:grey;
+}
+#logo {
+    display: none;
+    margin: 15px 10px 0px 2%;
+    width:75px; 
+    height:75px;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.gallery {
+    max-width: 275px;
+    padding-top:10px;
+}
+
+nav {
+    display:flex;
+}
+
+nav a {
+    text-decoration: none;
+    outline: none;
+    color:black;
+    font-weight: bold;
+}
+nav a::first-letter {
+    color:rgb(0, 119, 204)
+} 
+
+nav ul {
+    width:80%;
+    margin:5px;
+    padding-top:30px;
+    list-style:none;
+}
+
+nav a:hover {
+    color: grey;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+}
+.frame {
+    border-style: solid;
+}
+/* Applying flex, so content is flowing nice on the page */
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 150px;
+    margin:10px 10% 20px;
+}
+
+/* Setting up the menu icon */
+
+.menu_icon{
+    display:flex;
+    padding:30px 20px;
+    cursor: pointer;
+}
+
+.menu_icon div {
+    width: 25px;
+    height: 4px;
+    margin: 5px;
+    background-color: black;
+}
+
+/* Fixing the navigation on top */
+
+.navigation{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    background-color: white;
+    border-style: none none solid;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*Mobile*/
+@media screen and (min-width:350px) {
+    #logo {
+        display: flex;
+    }
+    h1 {
+    padding-left:5px;
+    }
+}
+@media screen and (max-width:512px){
+    
+    .navigation-links{
+        margin-top:119px;
+    }
+}
+/*Navigation menu appears*/
+@media screen and (min-width:513px)and (max-width:834px){
+    .navigation-links{
+        margin-top:90px;
+    }
+}
+@media screen and (max-width:835px){
+    
+    body {
+            overflow-x:hidden;
+    }
+
+    .navigation-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        width:230px;
+        background-color: white;
+        border-style: none none solid solid;
+        display: flex;
+        flex-direction: column;
+        margin-right:0px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li{
+        padding-top:20px;
+    }
+
+    .menu_icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_icon div {
+        margin: 2px;
+    }
+
+    nav h1 {
+        width: 80%;
+    
+    }
+
+    .menu-active {
+        transform: translateX(0%);
+    }
+
+    /* Sections now take more for extra readability */
+    
+    .section {
+        width:90%;
+    }
+
+    .gallery {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .gallery img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*Desktop Screen */
+@media screen and (min-width:750px){
+
+    .section {
+        width: 40%;
+        margin-right: 5%;
+        margin-left:5%;
+    }
+
+    .gallery {
+        max-width: 230px;
+        max-height: 230px;
+    }
+
+    .gallery img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+/*Menu bar disappears*/
+@media screen and (min-width:836px){
+   
+    nav{
+        flex-flow:row;
+    }
+
+    nav ul li {
+        display: inline-flex;
+        font-size: 1.5em;
+       padding-right: 2%;
+    }
+    
+    .menu_icon {
+    display:none;
+    }
+}

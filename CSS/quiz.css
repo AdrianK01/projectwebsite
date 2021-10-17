@@ -1,0 +1,15 @@
+/* Written by Adrian Klimaszewski */
+#submit {
+    border: 3px solid rgb(0, 119, 204);
+    background: white;
+    border-radius: 10px;
+    font-size: 2em;
+    color:rgb(0, 119, 204);
+    cursor: pointer;
+}
+.correct {
+    color: green;
+}
+input {
+    margin:10px 0px 10px;
+}

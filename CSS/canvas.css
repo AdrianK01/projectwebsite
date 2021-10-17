@@ -1,0 +1,50 @@
+/* Written by Adrian Klimaszewski */
+
+/*Table*/
+th, td {
+    font-size: 0.8em;
+    padding: 5px;
+}
+table, th, td {
+    border: 2px solid rgb(0, 119, 204);
+    border-collapse: collapse;
+    text-align: center;
+}
+table {
+    border-radius: 10px;
+}
+canvas {
+    width:250px;
+    height:250px;
+    border: 2px solid black;
+}
+ul {
+    list-style: none;
+}
+/*Legend*/
+.legend {
+    width: 25px;
+    height: 10px;
+    margin: 5px;
+}
+.map {
+    display: flex;
+}
+
+@media screen and (min-width:630px) {
+    th, td {
+        font-size: 1em;
+    }
+    canvas {
+        width:350px;
+        height:350px;
+
+    }
+}
+@media screen and (min-width:1000px)
+{
+    canvas {
+        width: 400px;
+        height: 400px;
+    }
+}

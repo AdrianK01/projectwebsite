@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Adrian Klimaszewski">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COM1008 Project - Canvas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/canvas.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <!--Logo & page title-->
+            <img id="logo" src="../Media/COM1008Logo.png" alt="Project logo">
+            <h1>COM1008 PROJECT</h1>
+
+            <!--Navigation-->
+            <ul class="navigation-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="degree.html">DEGREE</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <li><a href="canvas.html">CANVAS</a></li>
+                <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <!--Menu Icon-->
+            <div class="menu_icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!--Table-->
+        <div class="section">
+            <h2>Data for visualisation</h2>
+            <table id="table">
+                <tr>
+                    <th>Day</th>
+                    <th>University Work</th>
+                    <th>Playing Games</th>
+                    <th>Cooking</th>
+                </tr>
+                <tr>
+                    <th>Mon</th>
+                    <th>3</th>
+                    <th>3</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>Tue</th>
+                    <th>2</th>
+                    <th>4</th>
+                    <th>2</th>
+                </tr>
+                <tr>
+                    <th>Wen</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                </tr>
+                <tr>
+                    <th>Thu</th>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>3</th>
+                </tr>
+                <tr>
+                    <th>Fri</th>
+                    <th>4</th>
+                    <th>2</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>Sat</th>
+                    <th>4</th>
+                    <th>2</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>Sun</th>
+                    <th>2</th>
+                    <th>5</th>
+                    <th>0</th>
+                </tr>
+            </table>
+            <p>Select Colour Scheme:</p>
+            <ul>
+                <li><input id="C1" type="radio" name="Colour" checked>First Colour Scheme</li>
+                <li><input id="C2" type="radio" name="Colour">Second Colour Scheme</li>
+                <li><input id="C3" type="radio" name="Colour">Third Colour Scheme</li>
+            </ul>
+            <p>Select Type of Visulaisation:</p>
+            <ul>
+                <li><input id="T1" type="radio" name="Vis" value="A" checked>Bar Chart</li>
+                <li><input id="T2" type="radio" name="Vis" value="B">Pie Chart</li>
+                <li><input id="T3" type="radio" name="Vis" value="C">Line Graph</li>
+            </ul>
+            <div>
+                <p>Legend</p>
+                <div class="map">
+                    <div id="Uni" class="legend"></div> <label>- University Work</label>
+                </div>
+                <div class="map">
+                    <div id="Games" class="legend"></div> <label>- Playing Games</label>
+                </div>
+                <div class="map">
+                    <div id="Cooking" class="legend"></div> <label>- Cooking</label>
+                </div>
+            </div>
+        </div>
+
+        <!--Visualisation-->
+        <div class="section">
+            <h2>Visualisation</h2>
+            <canvas id="visualisation" width="300" height="300"></canvas>
+        </div>
+        <!--Buttons-->
+    </main>
+
+    <footer>
+        <p>Created by Adrian Klimaszewski, 2020</p>
+    </footer>
+
+    <!--Scripts-->
+    <script src="../JavaScript/menu.js"></script>
+    <script src="../JavaScript/canvas.js"></script>
+</body>
+
+</html>

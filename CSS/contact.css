@@ -1,0 +1,45 @@
+/* Written by Adrian Klimaszewski */
+
+#content {
+    height: 300px;
+    width: 200px;
+    margin-top: 5px;
+    border: 2px solid rgb(0, 119, 204);
+    border-radius:10px;
+}
+input {
+    margin-top: 5px;
+    border: 2px solid rgb(0, 119, 204);
+    border-radius:10px;
+
+}
+#submit {
+    border: 3px solid rgb(0, 119, 204);
+    background: rgb(0, 119, 204);
+    border-radius: 10px;
+    font-size: 2em;
+    color:white;
+    cursor: pointer;
+}
+#contact_form{
+    background: white;
+}
+#email{
+ width:200px;       
+}
+@media screen and (min-width:370px){
+    #content{
+    height: 300px;
+    width: 300px;
+    }
+    #email{
+     width:250px;   
+    }
+}
+
+@media screen and (min-width:470px){
+    #content{
+    height: 300px;
+    width: 400px;
+    }
+}

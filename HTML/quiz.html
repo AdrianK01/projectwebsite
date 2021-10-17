@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Adrian Klimaszewski">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COM1008 Project - Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/quiz.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <!--Logo & page title-->
+            <img id="logo" src="../Media/COM1008Logo.png" alt="Project logo">
+            <h1>COM1008 PROJECT</h1>
+
+            <!--Navigation-->
+            <ul class="navigation-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="degree.html">DEGREE</a></li>
+                <li><a href="quiz.html">QUIZ</a></li>
+                <li><a href="canvas.html">CANVAS</a></li>
+                <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <!--Menu Icon-->
+            <div class="menu_icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <!--About Quiz-->
+        <div class="section">
+            <h2>Quiz</h2>
+            <p class="line"> On this page you can take a small pictorial quiz related to my University Course,
+                Department and the University in general.
+            </p>
+        </div>
+
+        <!-- Empty section for better content flow-->
+        <div class="section"></div>
+
+        <!--First question-->
+        <div class="section">
+            <h2>Question I</h2>
+            <p class="line"> What is the name of the University building on the picture marked with a red cross?</p>
+            <form name="QuestionI">
+                <ul>
+                    <li>
+                        <label id="correct1"><input type="radio" name="Question1">The Diamond</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="Question1">Computer Science Department
+                            Building</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="Question1">Student's Union</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="section">
+            <img class="gallery" src="../Media/TheDiamond.png"
+                alt="Picture of the map, marked building is located on crossroads of Brook Hill and St. George's Terrace">
+        </div>
+
+        <!--Second question-->
+        <div class="section">
+            <h2>Question II</h2>
+            <p class="line"> Where is Student's Union located?</p>
+            <form name="QuestionII">
+                <ul>
+                    <li>
+                        <label><input type="radio" name="Question2">34 Endcliffe Cres</label>
+                    </li>
+                    <li>
+                        <label id="correct2"><input type="radio" name="Question2">West Bank</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="Question2">211 Portobello</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="section">
+            <img class="gallery" src="../Media/StudentsUnion.jpg" alt="Picture of the Student's Union">
+        </div>
+        <!--Third question-->
+        <div class="section">
+            <h2>Question III</h2>
+            <p class="line"> Where is the building on the picture located?</p>
+            <form name="QuestionIII">
+                <ul>
+                    <li>
+                        <label><input type="radio" name="Question3">City Center</label>
+                    </li>
+                    <li>
+                        <label id="correct3"><input type="radio" name="Question3">Endcliffe</label>
+                    </li>
+                    <li>
+                        <label> <input type="radio" name="Question3">Ranmoor</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="section">
+            <img class="gallery" src="../Media/TheEdge.jpg" alt="Picture of The Edge building">
+        </div>
+        <div class="section">
+            <button id="submit" type="button">Check the results!</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created by Adrian Klimaszewski, 2020</p>
+    </footer>
+
+    <!--Scripts-->
+    <script src="../JavaScript/menu.js"></script>
+    <script src="../JavaScript/quiz.js"></script>
+</body>
+
+</html>
